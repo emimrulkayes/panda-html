@@ -1,0 +1,172 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Reusable Styles */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+.btn:hover {
+    background: linear-gradient(180deg,  #FF136F 100%, #FF589B -0.05%);
+}
+.btn i {
+    margin-left: 1rem;
+}
+
+.slider-btn {
+    padding: 1.5rem 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 8.4rem;
+    color: #1F1F1F;
+}
+
+/* Header Area Styles  */
+.header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 999;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+.navbar {
+    padding-top: 2.5rem;
+}
+.navbar-brand {
+    max-width: 29rem;
+    max-height: 4rem;
+}
+
+.nav-menu .menus li a.nav-link {
+    font-size: 1.6rem;
+    color: #3C3C3C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 1.5rem;
+}
+.nav-menu .menus li a:hover {
+    color: #85A019;
+}
+.nav-menu .menus li a.nav-link.active {
+    color: #85A019;
+}
+
+.toggle-icon {
+    background: transparent;
+    color: red;
+}
+.navbar-toggler-icon {
+    background: transparent;
+    color: red;
+}
+/* Header Area Styles End */
+
+/* Hero Area Styles  */
+.hero-area {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.carousel-item {
+    background: #FEEAE9;
+    border-radius: 1.5rem;
+    padding: 4rem 4.5rem;
+}
+
+.slide-btn, .slide-btn:focus {
+    color: #fcdad8;
+    width: 5%;
+    transition: all 0.5s ease-in-out;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+.slide-btn:hover {
+    color: #FF136F;
+}
+.slide-btn i {
+    font-size: 5rem;
+}
+
+.carousel-control-prev {
+    left: -3.3rem;
+}
+.carousel-control-next {
+    right: -9rem;
+}
+
+.banner-text h1 {
+    color: #363958;    
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8rem;
+    line-height: 9.2rem;
+    margin: 0;
+}
+.slide-content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #4E4E4E;
+    font-weight: 400;
+    padding-right: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.slide-content .price {
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #FF136F;
+    font-weight: 500;
+}
+/* Hero Area Styles End */
+
+/* Products Area Styles */
+.product .product-thamp {
+
+}
+.card-btn {
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.5rem;
+}
