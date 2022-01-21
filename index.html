@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Site Title -->
-    <title>Penguin - Fashion</title>
+    <title>Panda - eCommerce Html Template </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="./assets/styles/all.min.css">
     <!-- Bootstrap Stylesheet -->
@@ -27,8 +29,8 @@
            
                 <div class="collapse navbar-collapse nav-menu" id="navmenu">
                     <div class="input-group w-50 ms-auto">
-                        <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <input type="text" class="form-control border-0" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary submit-btn border-0" type="button" id="button-addon2">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -36,9 +38,15 @@
                         <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown__menus" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+                              <li><a class="dropdown-item" href="#backpack">Backpacks</a></li>
+                            </ul>
+                          </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">About us</a>
                         </li>
@@ -120,10 +128,7 @@
                                 </div>
                             </div>
                         </div>
-
-              
                     </div>
-
                     <button class="slide-btn carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                         <i class="far fa-arrow-alt-circle-left"></i>
                     </button>
@@ -134,6 +139,263 @@
             </div>
         </section>
         <!-- Hero Section End -->
+
+        <!-- Category Section Start -->
+        <section class="categories section-space">
+            <div class="container">
+                <h2 class="section-title mb-5">Categories</h2>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="category-item item_1">
+                            <h4 class="category-title">Watch</h4>
+                            <img src="./assets/images/categories/watch.png" class="img-fluid" alt="watch category">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 ">
+                        <div class="category-item item_2">
+                            <h4 class="category-title">Bag</h4>
+                            <img src="./assets/images/categories/bag.png" class="img-fluid" alt="watch category">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                        <div class="category-item item_3">
+                            <h4 class="category-title">Shoes</h4>
+                            <img src="./assets/images/categories/shoes.png" class="img-fluid" alt="watch category">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Category Section End -->
+
+        <!-- Product Section Start -->
+        <section class="product-area section-space" id="shoes">
+            <div class="container">
+                <div class=" d-flex justify-content-between mb-lg-5">
+                    <h2 class="section-title">Shoes</h2>
+                    <select class="form-select w-25 text-end" aria-label="Default select example">
+                        <option selected >See All</option>
+                        <option value="1">Man Shoes</option>
+                        <option value="2">Women Shoes</option>
+                        <option value="3">Kid's Shoes</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/shoes/shoe-1.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok Dart Men's Shoes</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/shoes/shoe-2.png" class="img-fluid" alt="shoes">  
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok Pump</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/shoes/shoe-3.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                            <img src="./assets/images/shoes/shoe-2.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                            <img src="./assets/images/shoes/shoe-3.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                            <img src="./assets/images/shoes/shoe-1.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section End -->
+        
+        <!-- Product Section Start -->
+        <section class="product-area section-space" id="backpack">
+            <div class="container">
+                <div class=" d-flex justify-content-between mb-lg-5">
+                    <h2 class="section-title">Backpack</h2>
+                    <select class="form-select w-25 text-end" aria-label="Default select example">
+                        <option selected >See All</option>
+                        <option value="1">Man Backpack</option>
+                        <option value="2">Women Backpack</option>
+                        <option value="3">Kid's Backpack</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/bags/bag-1.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok Dart Men's Shoes</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/bags/bag-2.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok Pump</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                            <img src="./assets/images/bags/bag-3.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                            <img src="./assets/images/bags/bag-2.png" class="img-fluid" alt="shoes">
+                            </figure>
+                        
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/bags/bag-3.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                        <div class="card product border-0 p-4 h-100">
+                            <figure class="img-box">
+                                <img src="./assets/images/bags/bag-1.png" class="img-fluid" alt="shoes">
+                            </figure>
+                            
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Reebok All Terrain</h4>
+                                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                <span class="price">&#36;1283</span>
+                            </div>
+                            <div class="card-footer text-center border-0">
+                                <button class="btn btn-primary card-btn">Buy Now <i class="fas fa-long-arrow-alt-right"></i></button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section End -->
 
         
     </main>
