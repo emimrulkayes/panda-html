@@ -11,14 +11,9 @@
     .slide-content p {
         padding: 0;
     }
-
-    .slide-btn {
-        display: none;
-    }
     .newslatter-content .input-group {
         width: 90%;
     }
-
     .widget-wrap {
         text-align: center;
     }
@@ -30,6 +25,12 @@
     }
     .widget .contact {
         justify-content: center;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .slide-btn {
+        display: none;
     }
 }
 
