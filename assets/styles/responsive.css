@@ -1,0 +1,35 @@
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .slide-content {
+        margin-top: 5rem;
+    }
+    .slide-title {
+        font-size: 4.6rem;
+        line-height: 5.4rem;
+    }
+    .slide-content p {
+        padding: 0;
+    }
+
+    .slide-btn {
+        display: none;
+    }
+    .newslatter-content .input-group {
+        width: 90%;
+    }
+
+    .widget-wrap {
+        text-align: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .widget {
+        text-align: center;
+    }
+    .widget .contact {
+        justify-content: center;
+    }
+}
+

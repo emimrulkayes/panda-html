@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
 </head>
 <body>
     <!-- Navbar -->
     <header class="header-area">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/images/logo.png" class="img-fluid" alt="Site Brand Logo">
                 </a>
                 <button class="navbar-toggler toggle-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"> 
@@ -36,13 +38,13 @@
                     </div>
                     <ul class="navbar-nav menus ms-auto">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
-                            <ul class="dropdown-menu dropdown__menus" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu dropdown__menus" aria-labelledby="dropdownMenu">
                               <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
                               <li><a class="dropdown-item" href="#backpack">Backpacks</a></li>
                             </ul>
@@ -51,7 +53,7 @@
                         <a class="nav-link" href="#">About us</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Cotact us</a>
+                        <a class="nav-link" href="#contact">Cotact us</a>
                         </li>
                     </ul>
                 </div>
@@ -68,7 +70,7 @@
                     <div class="carousel-inner rounded-3">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 order-2">
                                     <div class="slide-content">
                                         <h1 class="slide-title">Mi LED TV 4A PRO 32</h1>
                                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -79,7 +81,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 order-1">
                                     <figure>
                                         <img src="./assets/images/banner-images/tv.png" class="d-block img-fluid" alt="Mi LED TV 4A PRO 32">
                                     </figure>
@@ -89,7 +91,7 @@
 
                         <div class="carousel-item" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 order-2">
                                     <div class="slide-content">
                                         <h1 class="slide-title">Mi LED TV 4A PRO 32</h1>
                                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -100,7 +102,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 order-1">
                                     <figure>
                                         <img src="./assets/images/banner-images/headphone.png" class="d-block img-fluid" alt="Mi LED TV 4A PRO 32">
                                     </figure>
@@ -110,10 +112,10 @@
 
                         <div class="carousel-item" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 order-2">
                                     <div class="slide-content">
                                         <h1 class="slide-title">Mi LED TV 4A PRO 32</h1>
-                                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                        <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                                         <h1 class="price">&#36;820</h1>
                                         <button class="btn slider-btn btn-primary ">
                                             Buy Now 
@@ -121,7 +123,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 order-1">
                                     <figure>
                                         <img src="./assets/images/banner-images/xbox.png" class="d-block img-fluid" alt="Mi LED TV 4A PRO 32">
                                     </figure>
@@ -141,23 +143,23 @@
         <!-- Hero Section End -->
 
         <!-- Category Section Start -->
-        <section class="categories section-space">
+        <section id="category" class="categories section-space">
             <div class="container">
                 <h2 class="section-title mb-5">Categories</h2>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="category-item item_1">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="category-item item_1 mb-4">
                             <h4 class="category-title">Watch</h4>
                             <img src="./assets/images/categories/watch.png" class="img-fluid" alt="watch category">
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 ">
-                        <div class="category-item item_2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+                        <div class="category-item item_2 mb-4">
                             <h4 class="category-title">Bag</h4>
                             <img src="./assets/images/categories/bag.png" class="img-fluid" alt="watch category">
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
                         <div class="category-item item_3">
                             <h4 class="category-title">Shoes</h4>
                             <img src="./assets/images/categories/shoes.png" class="img-fluid" alt="watch category">
@@ -181,7 +183,7 @@
                     </select>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/shoes/shoe-1.png" class="img-fluid" alt="shoes">
@@ -197,7 +199,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/shoes/shoe-2.png" class="img-fluid" alt="shoes">  
@@ -213,7 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/shoes/shoe-3.png" class="img-fluid" alt="shoes">
@@ -229,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                             <img src="./assets/images/shoes/shoe-2.png" class="img-fluid" alt="shoes">
@@ -245,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                             <img src="./assets/images/shoes/shoe-3.png" class="img-fluid" alt="shoes">
@@ -261,7 +263,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                             <img src="./assets/images/shoes/shoe-1.png" class="img-fluid" alt="shoes">
@@ -278,12 +280,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Product Section End -->
-        
-        <!-- Product Section Start -->
-        <section class="product-area section-space" id="backpack">
-            <div class="container">
+
+            <!-- Backpack Section Start -->
+            <div class="container backpack" id="backpack">
                 <div class=" d-flex justify-content-between mb-lg-5">
                     <h2 class="section-title">Backpack</h2>
                     <select class="form-select w-25 text-end" aria-label="Default select example">
@@ -295,7 +294,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/bags/bag-1.png" class="img-fluid" alt="shoes">
@@ -310,8 +309,7 @@
                               </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/bags/bag-2.png" class="img-fluid" alt="shoes">
@@ -326,8 +324,7 @@
                               </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                             <img src="./assets/images/bags/bag-3.png" class="img-fluid" alt="shoes">
@@ -342,8 +339,7 @@
                               </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                             <img src="./assets/images/bags/bag-2.png" class="img-fluid" alt="shoes">
@@ -359,8 +355,7 @@
                               </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/bags/bag-3.png" class="img-fluid" alt="shoes">
@@ -375,8 +370,7 @@
                               </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 g-4">
                         <div class="card product border-0 p-4 h-100">
                             <figure class="img-box">
                                 <img src="./assets/images/bags/bag-1.png" class="img-fluid" alt="shoes">
@@ -396,16 +390,100 @@
             </div>
         </section>
         <!-- Product Section End -->
-
         
+        <section id="contact" class="newslatter section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <div class="newslatter-content text-center">
+                            <h2>LET'S STAY IN TOUCH</h2>
+                            <p>Get updates on sales specials and more</p>
+                            <div class="input-group m-auto text-center mt-5">
+                                <input type="text" class="form-control border-0 bg-white" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary submit-btn border-0" type="button" id="button-addon2">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <!-- Footer Area -->
+    <footer class="footer-area section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <div class="widget-wrap">
+                        <a href="index.html">
+                            <img src="./assets/images/logo2.png" alt="logo site Brand">
+                        </a>
+                        <p class="mt-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing. <br> Dolore, doloribus nesciunt incidunt tempora <br> accusantium illum perferendis .</p>
+                        <ul class="social-links p-0 mt-5 d-flex justify-content-md-start align-items-center ">
+                            <li class="list-group-item"><a href="#" class="text-danger"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-group-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-group-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-group-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                    <div class="quick-link widget ">
+                        <h3>Quick Links</h3>
+                        <ul class="p-0 mt-3">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#category">Products</a></li>
+                            <li><a href="#shoes">shoes</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                    <div class="quick-link widget">
+                        <h3>Our Services</h3>
+                        <ul class="p-0 mt-3">
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="quick-link widget">
+                        <h3>Contact Us</h3>
+                        <div class="contact-info mt-3">
+                            <div class="contact phone d-flex align-items-center">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="phone info ms-3">
+                                    <a href="tel:+58745852733"> +58745 852 733</a> <br>
+                                    <a href="tel:+58745852733"> +58745 852 733</a>
+                                </div>
+                            </div>
+                            <div class="contact mail d-flex align-items-center mt-3">
+                                <i class="far fa-envelope"></i>
+                                <div class="mail info ms-3">
+                                    <a href="mailto:info@example.com">info@example.com</a> <br>
+                                    <a href="mailto:info@example.com">info@example.com</a> 
+                                </div>
+                            </div>
+                            <div class="contact address d-flex align-items-center mt-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="ms-3 text-white ">West Victoria, <br> Road No-15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
-
-
+    <div class="copy-right bg-danger text-white text-center">
+        <p class="m-0 py-3">Hard work, Perseverance, and Determination for 2022</p>
+    </div>
+    <!-- Footer Area End -->
     <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>
